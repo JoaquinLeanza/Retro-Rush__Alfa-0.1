@@ -1,0 +1,198 @@
+*{
+    box-sizing: border-box;
+    font-family:sans-serif;
+    list-style: none;
+    color: white;
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background: linear-gradient(to bottom, #284b5b 40%, midnightblue);
+    background-attachment: fixed;
+}
+
+/*Navbar*/
+
+header{
+    position: sticky;
+    top: 0;
+}
+
+.Navbar{
+    width: 70%;
+    height: 40px;
+    background-color: white;
+    margin: auto;
+    display: grid;
+    border: 1px solid white;
+    border-radius: 0px 0px 10px 10px;
+    grid-template-columns: 1fr 1fr 6fr 1fr 2fr;
+    box-shadow: 0px 0px 10px black;
+}
+
+h1{
+    color: black;
+    text-align: center;
+    font-size: 30px;
+    margin-top: 1%;
+    margin-left: 18%;
+}
+
+.img-nv{
+    margin-top: 7%;
+    margin-left: 5%;
+}
+
+.img-nv2{
+    margin-top: 10%;
+    height: 25px;
+    margin-left: 65%;
+}
+
+.img-nv2:hover, .img-nv:hover{
+    opacity: 0.5;
+}
+
+.buscador{
+    margin-top: 7%;
+    border: none;
+    color:black;
+}
+
+.buscador::placeholder{
+    text-align: baseline;
+    border: none;
+    border-bottom: 1px solid greenyellow;
+    opacity: 0.7;
+    color: black;
+}
+
+input:focus{
+    outline: none; /*Quitamos el borde dle input cuando escribimos*/
+    border-bottom: 1px solid #284b5b;
+}
+
+/*Contenedor de imagen*/
+
+.contenedor-imagen-1{
+    width: 35%;
+    height: 35vh;
+    background-image: url(IMG-RetroRush/logo\ for\ Retrorush.png);
+    background-position: center;
+    background-size: cover;
+    margin: auto;
+    margin-top: 2%;
+    border: 1px solid white;
+    border-radius: 10px 10px 10px 10px;
+}
+
+/*Contenedores de informacion*/
+
+.contenedor-1{
+    width: 70%;
+    height: 85vh;
+    background-color: white;
+    margin: auto;
+    margin-top: 2%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+}
+
+.contenedor-1__grid-1{
+    height: 80vh;
+    display: grid;
+    grid-template-areas: 
+    "img1 img1"
+    "img1 img1"
+    "img2 img3"
+    "img4 img5"
+    ;
+    align-items: center;
+    row-gap: 20px;
+}
+
+/*Entrada hollow knight*/
+.HK-Entrance{
+    background-color: red;
+    height: 90%;
+    width: 90%;
+    margin: auto;
+    margin-top: 3%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+    grid-area: img1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.hk-img{
+    background-image: url(IMG-RetroRush/main/HK-img-main.jpeg);
+    height: 100%;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    border-radius: 10px;
+}
+
+.entrance{
+    background-color: #284b5b;
+    border-radius: 0px 10px 10px 0px;
+    height: 100px;
+    width: 50%;
+    position: absolute;
+    margin-top: 7%;
+    opacity: 0.7;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 2px white;
+}
+
+a{
+text-decoration: none;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid white;
+}
+
+.entrance-p{
+    padding: 6px;
+}
+
+.entrance:hover{
+    opacity: 0.9;
+    
+}
+
+/*entrada rrg*/
+
+.rrg-entrance{
+    grid-area: img2;
+    background-image: url(IMG-RetroRush/main/RGG-Studio.jpg);
+    height: 90%;
+    width: 80%;
+    background-size: 250px;
+    background-position: center;
+    margin: auto;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+.entrance-editable{
+    height: 90%;
+    width: 80%;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 10px;
+}
+
+.eed1{
+    background-image: url(IMG-RetroRush/main/trifuerza.png);
+    background-size: 500px;
+    
+}
